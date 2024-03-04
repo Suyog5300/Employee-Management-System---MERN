@@ -1,0 +1,76 @@
+@import url("https://db.onlinewebfonts.com/c/8eee43898bd47ae31788e3749971fcae?family=Quilin");
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #2B2E4A;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper ul li{
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+.hamburger{
+    /* position: absolute;
+    top: 5px;
+    left: 5px; */
+    z-index: 10000;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    margin: auto 5px;
+}
+.logo{
+    font-family: "Quilin";
+    font-weight: bolder;
+    margin: 2px 2px;
+}
+.menu-list{
+    margin-top: 30px;
+    /* background-color: bisque; */
+}
+.fake-container{
+    height: 84px;
+}
+.top-bar{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #655ACE;
+    align-content: center;
+    padding: 10px 10px;
+    text-align: center;
+}
+.top-bar h2{
+    margin: auto;
+    color: wheat;
+}
+
+@media screen and (max-width: 586px) {
+    #sidebar-wrapper {
+      top: 0;
+    }
+  }
+
+  @media screen and (max-width: 379px) {
+    .fake-container{
+      height: 120px;
+    }
+  }
